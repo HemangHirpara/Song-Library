@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--Author: Hemang Hirpara -->
+<!--Author: Poojan Patel -->
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hhh23_pdp83.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane id="backgroundPane" prefHeight="375.0" prefWidth="450.0">
+         <children>
+            <Label id="title_label" layoutX="14.0" layoutY="14.0" text="Song Library">
+               <font>
+                  <Font name="SF Mono Bold" size="24.0" />
+               </font>
+            </Label>
+            <ComboBox id="songComboBoxsongComboBox" fx:id="songComboBox" layoutX="17.0" layoutY="85.0" onAction="#setSongDisplay" prefHeight="27.0" prefWidth="196.0" />
+            <TextField id="name_tf" fx:id="name_tf" layoutX="17.0" layoutY="125.0" prefHeight="27.0" prefWidth="157.0" promptText="Song Title" visible="false" />
+            <TextField id="artist_tf" fx:id="artist_tf" layoutX="17.0" layoutY="162.0" prefHeight="27.0" prefWidth="157.0" promptText="Song Artist" visible="false" />
+            <TextField id="album_tf" fx:id="album_tf" layoutX="17.0" layoutY="206.0" prefHeight="27.0" prefWidth="157.0" promptText="Song Album" visible="false" />
+            <TextField id="year_tf" fx:id="year_tf" layoutX="17.0" layoutY="246.0" prefHeight="27.0" prefWidth="157.0" promptText="Song Year" visible="false">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextField>
+            <Button id="add_btn" fx:id="add_btn" layoutX="17.0" layoutY="297.0" mnemonicParsing="false" onAction="#onAddClicked" text="Add Song" />
+            <Button id="edit_btn" fx:id="edit_btn" layoutX="103.0" layoutY="297.0" mnemonicParsing="false" onAction="#onEditClicked" text="Edit Song" />
+            <Button id="del_btn" fx:id="del_btn" layoutX="186.0" layoutY="297.0" mnemonicParsing="false" onAction="#onDelClicked" text="Delete Song" />
+            <Button id="cancel_btn" fx:id="cancel_btn" layoutX="340.0" layoutY="297.0" mnemonicParsing="false" onAction="#onCancelClicked" text="Cancel Action" visible="false" />
+            <TextField id="title" fx:id="title" editable="false" layoutX="274.0" layoutY="125.0" prefWidth="160.0" />
+            <TextField id="artist" fx:id="artist" editable="false" layoutX="274.0" layoutY="162.0" />
+            <TextField id="album" fx:id="album" editable="false" layoutX="274.0" layoutY="207.0" />
+            <TextField id="year" fx:id="year" editable="false" layoutX="274.0" layoutY="246.0" />
+            <Label layoutX="17.0" layoutY="60.0" text="Choose a Song">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="312.0" layoutY="89.0" text="Song Details">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="225.0" layoutY="129.0" text="NAME">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="218.0" layoutY="165.0" text="ARTIST">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="218.0" layoutY="210.0" text="ALBUM">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="228.0" layoutY="250.0" text="YEAR">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField id="message_tf" fx:id="message_tf" editable="false" layoutX="16.0" layoutY="334.0" prefHeight="27.0" prefWidth="417.0" />
+            <Label layoutX="242.0" layoutY="19.0" text="created by hhh23 and pdp83">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</GridPane>
